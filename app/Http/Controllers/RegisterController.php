@@ -21,7 +21,6 @@ class RegisterController extends Controller
             'last_name' => 'required',
             'email' => 'required|email|unique:users',
             'mobile' => 'required',
-            'otp' => 'required',
         ]);
 
         // Insert the form values into the 'users' table using Query Builder
