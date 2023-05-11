@@ -1,6 +1,6 @@
 # Library-Mangement-System
 
-Use Case:
+<h3> Use Case: </h3>
 
 Owner , admin and users should be able to login using phone number with OTP.
 
@@ -66,3 +66,35 @@ Implement Validator for email and  mobile number
  
 
 Session should be handles using JWT
+
+-----------------------------------------------------------------------------------------------------
+<h2> User Management - Owner </h2>
+
+The Owner should be able to manage the admin users ( delete/add admin users)
+
+-----------------------------------------------------------------------------------------------------
+<h2> Book Management - Admin </h2>
+
+The admin should be able to manage the books, category ( add/update/delete)
+
+-----------------------------------------------------------------------------------------------------
+<h2> Book Return request </h2>
+
+User should be able to raise a book return request which will show for admin for confirmation. Once it’s confirmed, the book status should be changed to available.
+
+If fine is there, it should be visible to the admin and admin has to collect the payment before confirming the book rent status.
+
+-----------------------------------------------------------------------------------------------------
+<h2> Payment Made Request </h2>
+
+User should be able to raise a payment confirmation request (fine) and it should be visible for admin for confirmation. Admin should have the option to reject/accept the payment confirmation.
+
+-----------------------------------------------------------------------------------------------------
+<h2> Fine Adjustment Option for Owner/Admin </h2>
+
+Owner/ Admin should have the option to adjust the fine ( eg: if fine is 100, owner can change it to 50).
+
+-----------------------------------------------------------------------------------------------------
+<h2> Cron to update the fine amount </h2>
+
+Cron should be running at every day 12:00 AM and it should update the fine
