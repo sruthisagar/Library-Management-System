@@ -25,11 +25,20 @@
                 display: flex;
                 justify-content: center;
             }
+
+            .heading {
+                display: flex;
+                justify-content: center;
+            }
         </style>
     </head>
     <body>
+
         <div class="center-box">
             <div class="form-box">
+                <div class="heading mb-3">
+                    <h4> User Registration </h4>
+                </div>
                 <form method="POST" action="{{ route('register.post') }}">
                     @csrf
 
